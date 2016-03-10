@@ -5,11 +5,6 @@
     android:layout_height="match_parent"
     tools:context="com.krisdan.dan.timestablegame.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
     <!-- view for AdMob Banner Ad -->
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -19,5 +14,47 @@
         android:layout_centerHorizontal="true"
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LearnTimesTablesButton"
+        android:id="@+id/LearnTimesTablesButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DifficultyButton"
+        android:id="@+id/DifficultyButton"
+        android:layout_below="@+id/LearnTimesTablesButton"
+        android:layout_alignLeft="@+id/LearnTimesTablesButton"
+        android:layout_alignStart="@+id/LearnTimesTablesButton"
+        android:layout_alignRight="@+id/LearnTimesTablesButton"
+        android:layout_alignEnd="@+id/LearnTimesTablesButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TimeChallengeButton"
+        android:id="@+id/TimeChallengeButton"
+        android:layout_below="@+id/DifficultyButton"
+        android:layout_alignLeft="@+id/DifficultyButton"
+        android:layout_alignStart="@+id/DifficultyButton"
+        android:layout_alignRight="@+id/DifficultyButton"
+        android:layout_alignEnd="@+id/DifficultyButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RandomQuestionChallengeButton"
+        android:id="@+id/RandomQuestionChallengeButton"
+        android:layout_below="@+id/TimeChallengeButton"
+        android:layout_alignLeft="@+id/TimeChallengeButton"
+        android:layout_alignStart="@+id/TimeChallengeButton"
+        android:layout_alignRight="@+id/TimeChallengeButton"
+        android:layout_alignEnd="@+id/TimeChallengeButton" />
 
 </RelativeLayout>
